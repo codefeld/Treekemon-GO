@@ -8,6 +8,10 @@ def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
 
+def list_trees(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, "list.html")
+
 
 def db(request):
 
