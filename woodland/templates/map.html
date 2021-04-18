@@ -15,8 +15,20 @@
 let map;
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
-	center: { lat: -34.397, lng: 150.644 },
+	center: { lat: 34.697, lng: -86.494 },
 	zoom: 8,
+	});
+	// python {% for tree in trees %}
+	setMarker({{ tree.lat }}, {{ tree.lng }}, "{{ tree.url }}")
+	// python {% endfor %}
+}
+function setMarker(lat, lng, url) {
+    marker = new google.maps.Marker({
+          position: {lat: lat, lng: lng},
+          map: map,
+	});
+	google.maps.event.addListener(marker, 'click', function() {
+		window.location.href = url;
 	});
 }
 </script>
