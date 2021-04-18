@@ -32,6 +32,16 @@ def map_trees(request):
     }
     return render(request, "map.html", context)
 
+def detail_trees(request, id):
+    print("id = %s" % id)
+    for tree in trees["trees"]:
+        if tree["id"] == id:
+            context = {
+                "tree": tree
+            }
+            return render(request, "tree.html", context)
+    raise Http404("This tree is not in our database. :(")
+
 
 def db(request):
 

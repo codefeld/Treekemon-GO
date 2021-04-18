@@ -1,15 +1,17 @@
 {
 	"trees": [
 	{
+		"id": "cheese",
 		"lat": 34.5,
 		"lng": -86.4,
-		"url": "/",
+		"url": "/tree/cheese",
 		"name": "Fabulous Cheese Tree"
 	},
 	{
+		"id": "money",
 		"lat": 34.4,
 		"lng": -86.5,
-		"url": "/",
+		"url": "/tree/money",
 		"name": "Fabulous Money Tree"
 	}
 ]

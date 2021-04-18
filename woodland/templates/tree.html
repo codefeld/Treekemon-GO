@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Treekemon GO! - List Page</h1>
+    <a href="/" class="back-button">Click here to go back home.</a>
+  </div>
+</div>
+<div class="container" style="text-align: center">
+{{ tree.name }}
+</div>
+{% endblock %}
