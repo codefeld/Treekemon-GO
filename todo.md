@@ -3,10 +3,10 @@
 - [ ] Read the challenge guide
 - [x] Create app mockups for each page
 - [x] Wire mockups together
-- [ ] Create a map page
-- [ ] Put markers on the map
+- [x] Create a map page
+- [x] Put markers on the map
 - [ ] Add links to each marker
-- [ ] Link back to the home page
+- [x] Link back to the home page
 - [ ] QR Scanner
 - [ ] Tree Detail Page
 - [ ] Real Data
