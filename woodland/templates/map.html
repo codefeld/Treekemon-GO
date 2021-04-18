@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Treekemon GO! - Map Page</h1>
+    <a href="/" class="back-button">Click here to go back home.</a>
+  </div>
+</div>
+<div id="map"></div>
+{% if google_maps_api_key != "" %}
+<script>
+let map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById("map"), {
+	center: { lat: -34.397, lng: 150.644 },
+	zoom: 8,
+	});
+}
+</script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&callback=initMap">
+</script>
+{% endif %}
+{% endblock %}

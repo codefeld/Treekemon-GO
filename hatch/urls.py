@@ -16,5 +16,6 @@ import woodland.views
 
 urlpatterns = [
     path("", woodland.views.index, name="index"),
-    path("list/", woodland.views.list_trees, name="list")
+    path("list/", woodland.views.list_trees, name="list"),
+    path("map/", woodland.views.map_trees, name="map")
 ]
