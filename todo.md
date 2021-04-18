@@ -1,0 +1,5 @@
+- [x] Decide on a specific team name
+- [x] Decide on a challenge
+- [ ] Read the challenge guide
+- [x] Create app mockups for each page
+- [x] Wire mockups together
