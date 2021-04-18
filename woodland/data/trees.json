@@ -1,0 +1,16 @@
+{
+	"trees": [
+	{
+		"lat": 34.5,
+		"lng": -86.4,
+		"url": "/",
+		"name": "Fabulous Cheese Tree"
+	},
+	{
+		"lat": 34.4,
+		"lng": -86.5,
+		"url": "/",
+		"name": "Fabulous Money Tree"
+	}
+]
+}
