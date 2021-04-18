@@ -16,6 +16,5 @@ import woodland.views
 
 urlpatterns = [
     path("", woodland.views.index, name="index"),
-    path("db/", woodland.views.db, name="db"),
-    path("admin/", admin.site.urls),
+    path("list/", woodland.views.list_trees, name="list")
 ]
