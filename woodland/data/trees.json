@@ -1,18 +1,16 @@
 {
 	"trees": [
 	{
-		"id": "cheese",
-		"lat": 34.5,
-		"lng": -86.4,
-		"url": "/tree/cheese",
-		"name": "Fabulous Cheese Tree"
-	},
-	{
-		"id": "money",
-		"lat": 34.4,
-		"lng": -86.5,
-		"url": "/tree/money",
-		"name": "Fabulous Money Tree"
+		"id": "odorless_bayberry",
+		"circumference": 15,
+		"height": 27,
+		"spread": 16,
+		"points": 46,
+		"scientific_name": "Morella inodora",
+		"url": "/tree/odorless_bayberry",
+		"name": "Odorless Bayberry",
+		"lat": 30.43,
+		"lng": -87.43
 	}
 ]
 }
