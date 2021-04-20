@@ -19,21 +19,10 @@ function initMap() {
 	zoom: 8,
 	});
 	// python {% for tree in trees %}
-	setMarker("{{ tree.county }}, {{ tree.state }}", "{{ tree.url }}")
+	setMarker(parseInt("{{ tree.lat }}"), parseInt("{{ tree.lng }}"), "/tree/{{ tree.id }}")
 	// python {% endfor %}
 }
-function setMarker(address, url) {
-	geocoder = new google.maps.Geocoder();
-	geocoder.geocode({'address': address}, function(results, status) {
-		if (status === 'OK') {
-			map.setCenter(results[0].geometry.location);
-			var marker = new google.maps.Marker({
-				map: map,
-				position: results[0].geometry.location
-			});
-		}
-	});
-
+function setMarker(lat, lng, url) {
     marker = new google.maps.Marker({
           position: {lat: lat, lng: lng},
           map: map,
