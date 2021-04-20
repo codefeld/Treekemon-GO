@@ -10,7 +10,9 @@
 		"url": "/tree/odorless_bayberry",
 		"name": "Odorless Bayberry",
 		"lat": 30.43,
-		"lng": -87.43
+		"lng": -87.43,
+		"county": "Baldwin",
+		"state": "AL"
 	}
 ]
 }
