@@ -9,9 +9,20 @@
     <a href="/" class="back-button">Click here to go back home.</a>
   </div>
 </div>
-<div class="container" style="text-align: center;">
+<div class="container">
   <div class="tree-text">
   <p>{{ tree.name }}</p>
+  </div>
+  <div class="tree-little-text">
+  <br/><br/>County: {{tree.county}}, {{tree.state}}
+  <br>Scientific Name: {{tree.scientific_name}}
+  <br/>Points: {{tree.points}}
+  <br/>Tree ID: {{tree.id}}
+  <br/>Circumference: {{tree.circumference}} in.
+  <br/>Height: {{tree.height}} ft.
+  <br/>Crown Spread: {{tree.crown_spread}}
+  <br/>Was nominated by {{tree.nominated_by}} in the year {{tree.year_nominated}}.
+  <br/>Was crowned on {{tree.date_crowned}}.
   </div>
 <img src="{{ tree.img }}" class="tree-image"/>
 </div>
