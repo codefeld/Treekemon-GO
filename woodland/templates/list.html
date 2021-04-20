@@ -14,7 +14,7 @@
 
   <ul id="myUL">
     {% for tree in trees %}
-    <li><a href="{{ tree.url }}" class="list-group-item list-group-item-action">{{ tree.name }} ({{ tree.county }}, {{ tree.state }})</a></li>
+    <li><a href="/tree/{{ tree.id }}" class="list-group-item list-group-item-action">{{ tree.name }} ({{ tree.county }}, {{ tree.state }})</a></li>
     {% endfor %}
   </ul>
 </div>

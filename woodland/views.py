@@ -33,7 +33,7 @@ def map_trees(request):
 def detail_trees(request, id):
     print("id = %s" % id)
     for tree in trees["trees"]:
-        if tree["id"] == id:
+        if tree["id"] == int(id):
             context = {
                 "tree": tree
             }
