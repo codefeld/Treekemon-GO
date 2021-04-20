@@ -9,8 +9,10 @@
     <a href="/" class="back-button">Click here to go back home.</a>
   </div>
 </div>
-<div class="container" style="text-align: center">
-{{ tree.name }}
-<img src="{{ tree.img }}"/>
+<div class="container" style="text-align: center;">
+  <div class="tree-text">
+  <p>{{ tree.name }}</p>
+  </div>
+<img src="{{ tree.img }}" class="tree-image"/>
 </div>
 {% endblock %}
