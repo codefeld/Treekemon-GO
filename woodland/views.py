@@ -8,12 +8,10 @@ from .models import Greeting
 
 load_dotenv()
 
-with open("woodland/data/trees.json", "r") as f:
+with open("woodland/data/champions.json", "r") as f:
     tree_data = f.read()
 
 trees = json.loads(tree_data)
-
-print("trees: " + str(trees))
 
 # Create your views here.
 def index(request):
