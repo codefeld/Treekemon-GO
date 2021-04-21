@@ -9,21 +9,40 @@
     <a href="/" class="back-button">Click here to go back home.</a>
   </div>
 </div>
+
 <div class="container">
-  <div class="tree-text">
-  <p>{{ tree.name }}</p>
+  <div class="row">
+    <div class="col" style="margin-bottom: 20px">
+      <div class="tree-text">
+        <p>{{ tree.name }}</p>
+      </div>
+      <div class="tree-little-text">
+        County: {{tree.county}}, {{tree.state}}
+        <br>Scientific Name: {{tree.scientific_name}}
+        <br />Points: {{tree.points}}
+        <br />Tree ID: {{tree.id}}
+        <br />Circumference: {{tree.circumference}} in.
+        <br />Height: {{tree.height}} ft.
+        <br />Crown Spread: {{tree.crown_spread}}
+        <br />Was nominated by {{tree.nominated_by}} in the year {{tree.year_nominated}}.
+        <br />Was crowned on {{tree.date_crowned}}.
+      </div>
+    </div>
+    <div class="col" style="margin-bottom: 20px">
+      <img src="{{ tree.img }}" class="tree-image" />
+    </div>
   </div>
-  <div class="tree-little-text">
-  <br/><br/>County: {{tree.county}}, {{tree.state}}
-  <br>Scientific Name: {{tree.scientific_name}}
-  <br/>Points: {{tree.points}}
-  <br/>Tree ID: {{tree.id}}
-  <br/>Circumference: {{tree.circumference}} in.
-  <br/>Height: {{tree.height}} ft.
-  <br/>Crown Spread: {{tree.crown_spread}}
-  <br/>Was nominated by {{tree.nominated_by}} in the year {{tree.year_nominated}}.
-  <br/>Was crowned on {{tree.date_crowned}}.
+  <div class="row">
+    <div class="col">
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="file">
+        <button type="submit">Upload</button>
+      </form>
+    </div>
   </div>
-<img src="{{ tree.img }}" class="tree-image"/>
 </div>
+<hr />
+
 {% endblock %}
