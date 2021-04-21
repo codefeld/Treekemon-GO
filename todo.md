@@ -1,12 +1,12 @@
 - [x] Decide on a specific team name
 - [x] Decide on a challenge
-- [ ] Read the challenge guide
+- [x] Read the challenge guide
 - [x] Create app mockups for each page
 - [x] Wire mockups together
 - [x] Create a map page
 - [x] Put markers on the map
-- [ ] Add links to each marker
+- [x] Add links to each marker
 - [x] Link back to the home page
 - [ ] QR Scanner
-- [ ] Tree Detail Page
-- [ ] Real Data
+- [x] Tree Detail Page
+- [x] Real Data
