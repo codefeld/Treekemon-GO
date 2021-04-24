@@ -32,12 +32,12 @@
       <img src="{{ tree.img }}" class="tree-image" />
     </div>
   </div>
-  <div class="row" style=" vertical-align: bottom">
-    <div class="col">
-      <img src="{% static 'tree-big.png'%}" style="height: {{image_height}}px; margin-bottom: 30px; vertical-align: text-bottom"/>
+  <div class="row">
+    <div class="col" style=" margin-bottom: 30px;">
+      <img src="{% static 'tree-big.png'%}" height="{{image_height}}px"/>
     </div>
-    <div class="col" style="display: table-cell; vertical-align: text-bottom">
-      <img src="{% static 'person.png'%}" style="display: table-cell; height: 26px; margin-bottom: 30px; vertical-align: text-bottom"/>
+    <div class="col" style="margin-bottom: 30px;">
+      <img src="{% static 'person.png'%}" style="display: inline; height: 26px; bottom: 0; position: absolute;"/>
     </div>
   </div>
   <div class="row">
