@@ -11,8 +11,9 @@ for tree in champions["trees"]:
 	h = tree["height"]
 	if h < minimum:
 		minimum = h
+		minimum_tree = tree
 	if h > maximum:
 		maximum = h
 
-print("minimum = %s" % minimum)
+print("minimum = %s, %s" % (minimum_tree, minimum))
 print("maximum = %s" % maximum)

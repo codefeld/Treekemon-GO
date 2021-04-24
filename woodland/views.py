@@ -35,7 +35,8 @@ def detail_trees(request, id):
     for tree in trees["trees"]:
         if tree["id"] == int(id):
             context = {
-                "tree": tree
+                "tree": tree,
+                "image_height": tree["height"] + 20
             }
             return render(request, "tree.html", context)
     raise Http404("This tree is not in our database. :(")
