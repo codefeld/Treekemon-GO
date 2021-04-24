@@ -18,5 +18,6 @@ urlpatterns = [
     path("", woodland.views.index, name="index"),
     path("list/", woodland.views.list_trees, name="list"),
     path("map/", woodland.views.map_trees, name="map"),
+    path("scan/", woodland.views.scan_trees, name="scan"),
     path("tree/<id>", woodland.views.detail_trees, name="tree")
 ]

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Treekemon GO! - Scan Page</h1>
+    <a href="/" class="back-button">Click here to go back home.</a>
+  </div>
+</div>
+
+<div class="container" style="text-align: left">
+  <div style="color: white">
+    This is our QR code scanner! You can scan stuff (we need to change this)
+    <p></p>
+  </div>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <style>
+      input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        left: 8px;
+        font-size: 17px;
+        color: #b8b8b8;
+      }
+
+      .button-wrap {
+        position: relative;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 12px 130px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #227e3e;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+      }
+    </style>
+      <div class="container" style="text-align: left">
+        <div class="button-wrap">
+          <label class="button" for="upload">Scan Tree</label>
+          <input id="upload" type="file">
+        </div>
+      </div>
+</div>
+</form>
+</div>
+
+
+{% endblock %}

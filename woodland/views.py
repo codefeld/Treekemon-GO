@@ -41,6 +41,12 @@ def detail_trees(request, id):
             return render(request, "tree.html", context)
     raise Http404("This tree is not in our database. :(")
 
+def scan_trees(request):
+    context = {
+        "trees": trees["trees"]
+    }
+    return render(request, "scan.html", context)
+
 
 def db(request):
 
