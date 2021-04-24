@@ -28,8 +28,15 @@
         <br />Was crowned on {{tree.date_crowned}}.
       </div>
     </div>
-    <div class="col" style="margin-bottom: 20px">
+    <div class="col" style="margin-bottom: 30px">
       <img src="{{ tree.img }}" class="tree-image" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="{% static 'tree-big.png'%}" style="width: {{tree.height}}px; margin: 30px"/>
+    </div>
+    <div class="col">
     </div>
   </div>
   <div class="row">
@@ -53,7 +60,7 @@
 
           .button {
             display: inline-block;
-            padding: 12px 6px;
+            padding: 12px 130px;
             cursor: pointer;
             border-radius: 5px;
             background-color: #227e3e;
@@ -62,14 +69,12 @@
             color: #fff;
           }
         </style>
-        <body>
           <div class="container">
             <div class="button-wrap">
               <label class="button" for="upload">Upload File</label>
               <input id="upload" type="file">
             </div>
           </div>
-        </body>
     </div>
     </form>
   </div>
