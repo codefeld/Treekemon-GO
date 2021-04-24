@@ -15,7 +15,7 @@
     This is our QR code scanner! You can scan stuff (we need to change this)
     <p></p>
   </div>
-  <form method="post" enctype="multipart/form-data">
+  <form method="post" enctype="multipart/form-data" action="/random/">
     {% csrf_token %}
     {{ form.as_p }}
     <style>
@@ -46,7 +46,7 @@
       <div class="container" style="text-align: left">
         <div class="button-wrap">
           <label class="button" for="upload">Scan Tree</label>
-          <input id="upload" type="file">
+          <input id="upload" type="file" onchange="form.submit()">
         </div>
       </div>
 </div>

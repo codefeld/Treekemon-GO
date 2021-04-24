@@ -1,8 +1,10 @@
 import os
 import json
+import random
 from dotenv import load_dotenv
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import redirect
 
 from .models import Greeting
 
@@ -47,6 +49,10 @@ def scan_trees(request):
     }
     return render(request, "scan.html", context)
 
+def random_trees(request):
+    number = random.randint(0, len(trees["trees"]))
+    tree_id = trees["trees"][number]["id"]
+    return redirect("/tree/%s" % tree_id)
 
 def db(request):
 

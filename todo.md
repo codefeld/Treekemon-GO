@@ -11,6 +11,6 @@
 - [x] Tree Detail Page
 - [x] Real Data
 - [x] Remove searchicon.png CSS in list.html
-- [ ] Auto-submit QR scanner form Have QR scanner go to detail page
+- [x] Auto-submit QR scanner form Have QR scanner go to detail page
 - [x] Replace tree image with something thinner
 - [x] Improve header on each html page (remove the "List Page" to save space)
