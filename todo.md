@@ -7,6 +7,10 @@
 - [x] Put markers on the map
 - [x] Add links to each marker
 - [x] Link back to the home page
-- [ ] QR Scanner
+- [x] QR Scanner
 - [x] Tree Detail Page
 - [x] Real Data
+- [ ] Remove searchicon.png CSS in list.html
+- [ ] Auto-submit QR scanner form Have QR scanner go to detail page
+- [x] Replace tree image with something thinner
+- [ ] Improve header on each html page (remove the "List Page" to save space)
